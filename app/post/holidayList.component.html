@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+        <form class="col s12">
+            <div class="card-panel teal lighten-2">US Holiday List 2015:</div>
+            <div class="row">
+                <table class="striped">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Date</th>
+                            <th>Observed</th>
+                            <th>Public</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr *ngFor="let holiday of holidays">
+                            <td>
+                                <a href="">{{holiday.name}}</a>
+                            </td>
+                            <td>{{holiday.date}}</td>
+                            <td>{{holiday.observed}}</td>
+                            <td>{{holiday.public}}</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+        </form>
+    </div>
+</div>
